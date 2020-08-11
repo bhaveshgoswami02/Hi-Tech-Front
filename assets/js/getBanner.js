@@ -3,7 +3,7 @@ firebase.firestore().collection('banner').onSnapshot(function(snapshot){
     snapshot.forEach(function(taskValue){
         // console.log(taskValue.data())
         document.getElementById("ensign-nivoslider").innerHTML+=`
-            <img src="${taskValue.data().imgUrl}" alt="" />
+            <img src="${taskValue.data()?.imgUrl}" alt="" />
         `
     })
 })
