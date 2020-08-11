@@ -17,7 +17,7 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     let subject = document.getElementById("subject").value;
     let message = document.getElementById("message").value;
     e.preventDefault();
-    console.log(name,email,subject,message)
+    // console.log(name,email,subject,message)
     send(name,email,subject,message)
     form.reset()
 })
@@ -31,7 +31,7 @@ function send(name,email,subject,message){
         message: message,
         TimeStamp: firebase.firestore.FieldValue.serverTimestamp(),
     }
-    console.log(data2)
+    // console.log(data2)
     firebase.firestore().collection("contact-form").add(data2).then(res=>{
         swal("Message Sent!", "Thank you for contacting, we will contact you!", "success");
     })

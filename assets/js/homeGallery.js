@@ -15,7 +15,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.firestore().collection('gallery').orderBy("timeStamp","desc").limit(6).onSnapshot(function (snapshot) {
     document.getElementById("getImg").innerHTML = '';
     snapshot.forEach(function (taskValue) {
-        console.log(taskValue.data())
+        // console.log(taskValue.data())
         document.getElementById("getImg").innerHTML += `
             <div class="col-md-4 col-sm-4 col-xs-12 design development ">
             <div class="single-awesome-project">
@@ -36,13 +36,13 @@ firebase.firestore().collection('gallery').orderBy("timeStamp","desc").limit(6).
 })
 
 function getGallery(category){
-  console.log(category)
+  // console.log(category)
     if(category == "all"){
-      console.log("if")
+      // console.log("if")
       firebase.firestore().collection('gallery').orderBy("timeStamp","desc").limit(6).onSnapshot(function (snapshot) {
         document.getElementById("getImg").innerHTML = '';
         snapshot.forEach(function (taskValue) {
-            console.log(taskValue.data())
+            // console.log(taskValue.data())
             document.getElementById("getImg").innerHTML += `
                 <div class="col-md-4 col-sm-4 col-xs-12 design development ">
                 <div class="single-awesome-project">
@@ -64,11 +64,11 @@ function getGallery(category){
     }
     else
     {
-      console.log("else")
+      // console.log("else")
       firebase.firestore().collection('gallery').where("category","==",category).orderBy("timeStamp","desc").limit(6).onSnapshot(function (snapshot) {
         document.getElementById("getImg").innerHTML = '';
         snapshot.forEach(function (taskValue) {
-            console.log(taskValue.data())
+            // console.log(taskValue.data())
             document.getElementById("getImg").innerHTML += `
                 <div class="col-md-4 col-sm-4 col-xs-12 design development ">
                 <div class="single-awesome-project">

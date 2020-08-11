@@ -39,8 +39,16 @@
 @media (max-width:768px)
 {
     .banner-img{
-      height: 1000px!important;
+      height: 300px!important;
     }   
+
+    .banner-content{
+      margin-top: 100px;
+      display: none;
+    }
+    .about-img{
+      display: block;
+    }
 }
 
 
@@ -49,8 +57,11 @@
 @media (min-width: 1024px)
 {
   .banner-img{
-      height: 500px!important;
+      height: 700px!important;
     }   
+    .about-img{
+      display: none;
+    }
 }
 
 /*---------------------ipad-------------------------------*/
@@ -58,8 +69,11 @@
 @media (min-width:769px) and (max-width:1023px)
 {
   .banner-img{
-      height: 500px!important;
+      height: 700px!important;
     }   
+    .about-img{
+      display:none;
+    }
 }
   </style>
 
@@ -83,7 +97,7 @@
     <div class="container d-flex">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span></span><img src="assets/img/HITECH BROSHERS 33333.jpg"
+        <h1 class="text-light"><a href="index.html"><span></span><img src="assets/img/marquee.jpg"
               alt=""></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -115,17 +129,16 @@
   <div id="home" class="slider-area">
     <div class="bend niceties preview-2">
       <div id="ensign-nivoslider" class="slides">
-        <img src="assets/img/banner 1.jpg" class="banner-img" alt="" title="#slider-direction-1" />
-        <img src="assets/img/banner2.jpg"  class="banner-img" alt="" title="#slider-direction-3" />
-        <img src="assets/img/HITECH BROSHERS 22222.png" class="banner-img" alt="" title="#slider-direction-2" />
+        <img src="assets/img/banner 1.jpg" alt="" title="#slider-direction-1" />
+        <img src="assets/img/banner2.jpg"  alt="" title="#slider-direction-2" />
       </div>
 
       <!-- direction 1 -->
-      <div id="slider-direction-1" class="slider-direction slider-one banner-img">
+      <div id="slider-direction-1" class="slider-direction slider-one">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
+              <div class="slider-content banner-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInDown" data-wow-duration="2s" data-wow-delay=".2s">
                   <h2 class="title1">The Best Graphics Display Printing</h2>
@@ -144,36 +157,14 @@
         </div>
       </div>
 
-      <!-- direction 2 -->
-      <div id="slider-direction-2" class="slider-direction slider-two banner-img">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content text-center">
-                <!-- layer 1 -->
-                <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <h2 class="title1">Our product range includes a wide range</h2>
-                </div>
-                <!-- layer 2 -->
-                <div class="layer-1-2 wow slideInUp" data-wow-duration="2s" data-wow-delay=".1s">
-                  <h1 class="title2" style="font-family: sans-serif;font-size: 30px;">Acrylic board, acrylic letter sign board, LED ACP Signage,etc. </h1>
-                </div>
-                <!-- layer 3 -->
-                <div class="layer-1-3 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                  <a class="ready-btn right-btn page-scroll" href="#services">Our Services</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- direction 3 -->
-      <div id="slider-direction-3" class="slider-direction slider-two banner-img">
+
+      <!-- direction 2 -->
+      <div id="slider-direction-2" class="slider-direction slider-two">
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
+              <div class="slider-content  banner-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs wow slideInUp" data-wow-duration="2s" data-wow-delay=".2s">
                   <h2 class="title1">Offering wide range of outdoor advertising product.</h2>
@@ -213,7 +204,7 @@
               <div class="single-well">
                 <a href="#">
                   <img
-                  src="assets/img/HITECH BROSHERS 22222.jpg"
+                  src="assets/img/hitech add._1.jpg"
                   alt="" style="height:400px">
                 </a>
               </div>
@@ -260,12 +251,23 @@
         <div class="container">
         <div class="row mt-1">
           <!-- single-well start-->
-          <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-12 col-sm-12 col-xs-12 d-none d-lg-block">
             <div class="well-left">
               <div class="single-well">
                 <a href="#">
                   <img
                   src="assets/img/HITECH BROSHERS 11111.jpg"
+                  alt="" width="100%" style="height: 300px;">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 about-img">
+            <div class="">
+              <div class="">
+                <a href="#">
+                  <img
+                  src="assets/img/onSmallScreen.jpg"
                   alt="" width="100%" style="height: 300px;">
                 </a>
               </div>
@@ -290,7 +292,7 @@
         <div class="row text-center">
           <div id="flexService" class="col-lg-4 col-md-4 col-12 mx-auto my-4">
             <div class="card">
-              <img src="assets/img/flex_printing.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/flex-printing.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">FLEX PRINTING</h5>
                 <p class="card-text">Glow Sign Board, Flex Banner, Flex Board, Vinyl, One-Way Vision, Canvas, Retro Printing, Slovent & Eco-Solvent Printing Flex Stand Board, Hoarding.</p>
@@ -300,7 +302,7 @@
           </div>
           <div id="namePlates" class="col-lg-4 col-md-4 col-12 mx-auto my-4">
             <div class="card">
-              <img src="assets/img/vinyl.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/name-plate.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title" style="font-weight: 700;">NAME PLATES</h5>
                 <p class="card-text">LED Nameplates, House / Office Nameplates, Class Room Number / Plates, Table Name Plates, Packet Plate Conference Table Plates, Granite Name Plate, Car Number Plate & Etc.</p>
@@ -311,7 +313,7 @@
           </div>
           <div id="boardDisplay" class="col-lg-4 col-md-4 col-12 mx-auto my-4">
             <div class="card">
-              <img src="assets/img/mall_branding.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/display-board.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">BOARD DISPLAY</h5>
                 <p class="card-text">Writing White Board, Green Chalk Board, Notice / Display / Pinup Board, PVC Cover Gate Display Board, Exhibition Display Board with Stands.</p>
@@ -320,10 +322,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-md-2"></div>
           <div id="frameDisplay" class="col-lg-4 col-md-4 col-12 my-4">
             <div class="card">
-              <img src="assets/img/vehicle-banding.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/frame-display.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">FRAME DISPLAY</h5>
                 <p class="card-text">Honors Board, Karyakal Board, Mahapurush & God Photo Frames, Suchana Board, Opening Board, Indicate Board, Topper Results Board, and Many More....</p>
@@ -332,12 +333,23 @@
               </div>
             </div>
           </div>
+          <div id="offsetPrinting" class="col-lg-4 col-md-4 col-12 my-4" >
+            <div class="card">
+              <img src="assets/img/offset.jpg" class="card-img-top" style="height: 178px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Offset Printing</h5>
+                <p class="card-text">Visiting Card, Letter Pad, Bill Book, Brochure, Pamphlets, Certificate (Screen & Multicolors Offset Printing), Color Photocopy, Lamination, Sprial Binding, Rubber Stump, ID Card.</p>
+                <a class="btn btn-primary ready-btn" style="padding: 10px 20px;" href="/ourworks.html" >Show All</a>
+                
+              </div>
+            </div>
+          </div>
           <div id="otherDisplay" class="col-lg-4 col-md-4 col-12 my-4">
             <div class="card">
-              <img src="assets/img/mall_branding.jpg" class="card-img-top" alt="...">
+              <img src="assets/img/display-other.jpg" class="card-img-top" style="height: 178px;" alt="...">
               <div class="card-body">
                 <h5 class="card-title">OTHER DISPLAY</h5>
-                <p class="card-text">Roll-up Standee, Canopy, Umbrella, Sandwich Display, Dais(Lecture Stands), Wooden Stands, T-Shirt Printing, Cup Printing, Sunpack Sheet Printing, Cyccle & Tempo Advertisement .</p>
+                <p class="card-text">Roll-up Standee, Canopy, Umbrella, Sandwich Display, Dais(Lecture Stands), Wooden Stands, T-Shirt Printing, Cup Printing, Sunpack Sheet Printing, Cycle & Tempo Advertisement .</p>
                 <a class="btn btn-primary ready-btn" style="padding: 10px 20px;" href="/ourworks.html" >Show All</a>
                 
               </div>
@@ -365,25 +377,52 @@
             <div class="awesome-menu ">
               <ul class="project-menu">
                 <li>
-                  <a onclick="getGallery('all')" class="active">All</a>
+                  <a onclick="getGallery('all')" class="active my-2">All</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('led light')" >LED Lights</a>
+                  <a onclick="getGallery('CICYLE & TEMPO  ADD WORK')" class="my-2" >CICYLE & TEMPO  ADD WORK</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('flex printing')" >FLEX PRINTING</a>
+                  <a class="my-2" onclick="getGallery('DAIS  (LECTURE STANDS)')" >DAIS  (LECTURE STANDS)</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('name plates')" >NAME PLATES</a>
+                  <a class="my-2" onclick="getGallery('EXHIBITION DISPLAY BOARD')" >EXHIBITION DISPLAY BOARD</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('display board')" >BOARD DISPLAY</a>
+                  <a class="my-2" onclick="getGallery('FLEX PRINTING WORKS')" >FLEX PRINTING WORKS</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('display frame')" >FRAME DISPLAY</a>
+                  <a class="my-2" onclick="getGallery('GLOWSIGN BOARD')" >GLOWSIGN BOARD</a>
                 </li>
                 <li>
-                  <a onclick="getGallery('display others')" >OTHER DISPLAY</a>
+                  <a class="my-2" onclick="getGallery('KARYAKAL DISPLAY BPOARD')" >KARYAKAL DISPLAY BPOARD</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('LED LETTER BOARD WORKS')" >LED LETTER BOARD WORKS</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('NAME PLATES')" >NAME PLATES</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('OPENING PLATES')" >OPENING PLATES</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('SCHOOL WALLPAPER FLEX PASTING WORKS')" >SCHOOL WALLPAPER FLEX PASTING WORKS</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('STEEL LETTER WORK')" >STEEL LETTER WORK</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('TASVEER WORKS')" >TASVEER WORKS</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('VINAYLE SUNBOARD PRINTING WORKS')" >VINAYLE SUNBOARD PRINTING WORKS</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('WHITE GREEN & DISPLAY BOARD')" >WHITE GREEN & DISPLAY BOARD</a>
+                </li>
+                <li>
+                  <a class="my-2" onclick="getGallery('WOODEN STANDS VINAYLE SUNBOARD PRINTING  WORKS')" >WOODEN STANDS VINAYLE SUNBOARD PRINTING WORKS</a>
                 </li>
               </ul>
             </div>
@@ -444,7 +483,7 @@
                 <div class="footer-icons">
                   <ul>
                     <li>
-                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.facebook.com/Hitech-graphics-udr-115054250298928/" target="_blank"><i class="fa fa-facebook"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="fa fa-twitter"></i></a>
