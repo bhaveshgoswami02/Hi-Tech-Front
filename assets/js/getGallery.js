@@ -64,7 +64,7 @@ function getGallery(category) {
   else 
   {
     // console.log("else")
-    firebase.firestore().collection('gallery').where("category", "==", category).onSnapshot(function (snapshot) {
+    firebase.firestore().collection('gallery').where("category", "==", category).orderBy("timeStamp","desc").onSnapshot(function (snapshot) {
       document.getElementById("getImg").innerHTML = '';
       snapshot.forEach(function (taskValue) {
         // console.log(taskValue.data())
